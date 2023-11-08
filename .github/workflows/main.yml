@@ -1,0 +1,17 @@
+name: Update Changelog
+
+on:
+  pull_request:
+    types: [synchronize, opened]
+
+jobs:
+  update-changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+      - name: Update Changelog
+        uses: MadaniKK/add-changeset@main
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          changeset_path: changelogs/fragments
