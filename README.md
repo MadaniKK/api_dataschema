@@ -1,3 +1,7 @@
 # api_dataschema
-1. Used Python to construct data pipelines based on PostgREST to retrieve and preprocess data from PgSQL for SVR modeling. (Improved speed by at least 800\%)
-2. Developed a RESTful API for retrieving GeoJSON data using postgREST under Springboot Framework. Implemented endpoints for fetching data based on trace IDs, time range, and bounding box, enabling flexible and efficient retrieval of GeoJSON data from the database; kept clear documentation to ensure seamless integration and facilitate usage and understanding.
+1. Slashed the SVR task data preprocessing time to one-tenth by refactoring the data pipelines from directly accessing Cloud files to extracting data through Postgrest-powered endpoints
+2. Enhanced data independence of Geo data by fine-tuning the data schema design, developed APIs for
+flexible retrieval and paging query of GeoJson data using Springboot and Java
+3. Significantly boosted large-scale ID request handling efficiency by optimizing query processes, reducing operation time from minutes to second
+
+testing github actions
